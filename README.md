@@ -11,7 +11,7 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 Clone this repo to `~/.config/home-manager`
 
 ```bash
-nix run nixpkgs#git -- clone https://github.com/snake575/nix-config.git $HOME/.config/home-manager
+nix run nixpkgs#git -- clone https://github.com/delta575/nix-config.git $HOME/.config/home-manager
 
 
 ```

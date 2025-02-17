@@ -7,5 +7,5 @@
 
   targets.genericLinux.enable = true;
 
-  home.homeDirectory = "/home/snake575";
+  home.homeDirectory = "/home/delta";
 }

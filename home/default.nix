@@ -18,8 +18,8 @@
 
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
-  home.username = "snake575";
-  home.homeDirectory = lib.mkDefault "/home/snake575";
+  home.username = "delta";
+  home.homeDirectory = lib.mkDefault "/home/delta";
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
@@ -79,7 +79,7 @@
   #
   # or
   #
-  #  /etc/profiles/per-user/snake575/etc/profile.d/hm-session-vars.sh
+  #  /etc/profiles/per-user/delta/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
     # EDITOR = "emacs";
