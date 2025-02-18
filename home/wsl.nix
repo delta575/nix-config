@@ -11,7 +11,7 @@
         sshCommand = "ssh.exe";
       };
       gpg = {
-        ssh.program = "/mnt/c/Program Files/1Password/app/8/op-ssh-sign-wsl";
+        ssh.program = "/mnt/c/Users/delta/AppData/Local/1Password/app/8/op-ssh-sign-wsl";
       };
     };
   };
