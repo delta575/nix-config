@@ -5,7 +5,7 @@
     ./linux.nix
   ];
 
-  programs.git = {
+programs.git = {
     extraConfig = {
       core = {
         sshCommand = "ssh.exe";
@@ -14,5 +14,10 @@
         ssh.program = "/mnt/c/Users/delta/AppData/Local/1Password/app/8/op-ssh-sign-wsl";
       };
     };
+  };
+
+  home.shellAliases = {
+    ssh = "ssh.exe";
+    ssh-add = "ssh-add.exe";
   };
 }

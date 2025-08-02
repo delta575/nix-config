@@ -38,6 +38,10 @@
           pkgs = pkgsFor.x86_64-linux;
           modules = [ ./home/wsl.nix ];
         };
+        "delta@Delta-G16" = lib.homeManagerConfiguration {
+          pkgs = pkgsFor.x86_64-linux;
+          modules = [ ./home/wsl.nix ];
+        };
       };
       devShells = forEachSystem (pkgs: import ./shell.nix { inherit pkgs; });
     };
