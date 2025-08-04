@@ -5,7 +5,7 @@
     ./linux.nix
   ];
 
-programs.git = {
+  programs.git = {
     extraConfig = {
       core = {
         sshCommand = "ssh.exe";
