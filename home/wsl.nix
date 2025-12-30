@@ -1,21 +1,24 @@
 { ... }:
 
 {
-  imports = [
-    ./linux.nix
-  ];
+  # WSL-specific configuration
+  # Uses Windows SSH and 1Password for seamless key management
+  imports = [ ./linux.nix ];
 
   programs.git = {
-    extraConfig = {
+    settings = {
       core = {
+        # Use Windows SSH to share keys with Windows host
         sshCommand = "ssh.exe";
       };
       gpg = {
-        ssh.program = "/mnt/c/Users/delta/AppData/Local/1Password/app/8/op-ssh-sign-wsl";
+        # 1Password SSH signing agent (WSL path)
+        ssh.program = "/mnt/c/Program Files/1Password/app/8/op-ssh-sign-wsl";
       };
     };
   };
 
+  # Use Windows SSH tools to share agent with Windows host
   home.shellAliases = {
     ssh = "ssh.exe";
     ssh-add = "ssh-add.exe";
