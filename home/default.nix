@@ -33,8 +33,13 @@
 
     # Tools
     claude-monitor
+    jq
     nixd
     nixfmt-rfc-style
+  ];
+
+  home.sessionPath = [
+    "$HOME/.bun/bin"
   ];
 
   home.shellAliases = {
