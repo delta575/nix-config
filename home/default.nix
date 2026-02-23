@@ -39,7 +39,9 @@
   ];
 
   home.sessionPath = [
-    "$HOME/.bun/bin"
+    "$HOME/.bun/bin",
+    "$HOME/.local/share/pnpm",
+    "$HOME/.local/bin"
   ];
 
   home.shellAliases = {
