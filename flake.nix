@@ -42,6 +42,10 @@
           pkgs = pkgsFor.x86_64-linux;
           modules = [ ./home/wsl.nix ];
         };
+        "delta@ubuntu-openclaw" = lib.homeManagerConfiguration {
+          pkgs = pkgsFor.x86_64-linux;
+          modules = [ ./home/openclaw.nix ];
+        };
       };
       devShells = forEachSystem (pkgs: import ./shell.nix { inherit pkgs; });
     };
